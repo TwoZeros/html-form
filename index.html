@@ -1,43 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
- <meta charset="utf-8" />
- <title>First form</title>
- <style>
- .form-row{
-    margin: 10px 5px;
- }
- </style>
- </head>
- <body>
- <h2>Регистрация</h2>
- <form action="search.html" method="get">
-    <div class="form-row">
-        <label for="username">username:</label>
-        <input type="text" id="username" autocomplete="off" placeholder="Ваше имя"  name="username" >
-    </div>
-    <div class="form-row">
-        <label for="password">password: </label>
-        <input type="password" id="password" placeholder="Пароль" name="password" >
-    </div>
-    <div class="form-row">
-        <textarea id="message"  placeholder="О себе" name="userMessage"></textarea>
-    </div>
 
-    <div class="form-row">
-        <p> Пол:</p>
-        <input type="radio" value="male" id="gender1"  name="sex" />
-        <label for="gender1">Мужской</label>
-        <input type="radio" value="female" id="gender2" name="sex" />
-        <label for="gender2">Женский</label>
-    </div>
-  
-    <div class="form-row">
-        <input type="submit" value="Отпрвить" />
-    </div>  
+<head>
+    <meta charset="utf-8" />
+    <title>First form</title>
+    <style>
+        .form-row {
+            margin: 10px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Регистрация</h2>
+    <form action="search.html" method="get">
+        <div class="form-row">
+            <label for="username">username:</label>
+            <input type="text" pattern="[A-Za-z]*" required id="username" autocomplete="off" placeholder="Ваше имя" name="username">
+        </div>
+        <div class="form-row">
+            <label for="email">email:</label>
+            <input type="email" id="email" name="email" />
+        </div>
+        <div class="form-row">
+            <label for="password">password: </label>
+            <input type="password" required id="password" placeholder="Пароль" name="password">
+        </div>
+        <div class="form-row">
+            <textarea id="message" placeholder="О себе" name="userMessage"></textarea>
+        </div>
+
+        <div class="form-row">
+            <p> Пол:</p>
+            <input type="radio" value="male" id="gender1" name="sex" />
+            <label for="gender1" class="male">Мужской</label>
+            <input type="radio" value="female" id="gender2" name="sex" />
+            <label for="gender2">Женский</label>
+        </div>
+        <fieldset>
+            <legend>Ваши интересы</legend>
+
+            <div>
+                <input type="checkbox" id="music" name="music" checked />
+                <label for="music">музыка</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="sport" name="sport" />
+                <label for="sport">спрот</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="games" name="games" />
+                <label for="games">игры</label>
+            </div>
+        </fieldset>
 
 
- </form>
+        <div class="form-row">
+            <input type="submit" value="Отпрвить" />
+        </div>
 
- </body>
+
+    </form>
+
+</body>
+
 </html>
