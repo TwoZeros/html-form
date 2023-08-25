@@ -10,8 +10,8 @@
  </style>
  </head>
  <body>
- <h2>Let’s search something</h2>
- <form action="search.html" method="post">
+ <h2>Регистрация</h2>
+ <form action="search.html" method="get">
     <div class="form-row">
         <label for="username">username:</label>
         <input type="text" id="username" autocomplete="off" placeholder="Ваше имя"  name="username" >
@@ -21,12 +21,22 @@
         <input type="password" id="password" placeholder="Пароль" name="password" >
     </div>
     <div class="form-row">
-        <textarea id="message"  placeholder="Ваше сообщение" name="userMessage"></textarea>
+        <textarea id="message"  placeholder="О себе" name="userMessage"></textarea>
     </div>
+
     <div class="form-row">
-        <input type="submit" value="Search" />
+        <p> Пол:</p>
+        <input type="radio" value="male" id="gender1"  name="sex" />
+        <label for="gender1">Мужской</label>
+        <input type="radio" value="female" id="gender2" name="sex" />
+        <label for="gender2">Женский</label>
     </div>
-   
+  
+    <div class="form-row">
+        <input type="submit" value="Отпрвить" />
+    </div>  
+
+
  </form>
 
  </body>
