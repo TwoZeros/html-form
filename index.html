@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8" />
+ <title>First form</title>
+ <style>
+ .form-row{
+    margin: 10px 5px;
+ }
+ </style>
+ </head>
+ <body>
+ <h2>Let’s search something</h2>
+ <form action="search.html" method="post">
+    <div class="form-row">
+        <label for="username">username:</label>
+        <input type="text" id="username" autocomplete="off" placeholder="Ваше имя"  name="username" >
+    </div>
+    <div class="form-row">
+        <label for="password">password: </label>
+        <input type="password" id="password" placeholder="Пароль" name="password" >
+    </div>
+    <div class="form-row">
+        <textarea id="message"  placeholder="Ваше сообщение" name="userMessage"></textarea>
+    </div>
+    <div class="form-row">
+        <input type="submit" value="Search" />
+    </div>
+   
+ </form>
+
+ </body>
+</html>
